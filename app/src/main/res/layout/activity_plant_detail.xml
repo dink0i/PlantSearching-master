@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".PlantDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFDFF"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/template_article_detail"
+            app:layout_constraintBottom_toTopOf="@+id/big_text_view"
+            app:layout_constraintTop_toTopOf="@+id/big_text_view">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/arrow_left_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:background="#DBEDFD"
+                        android:gravity="center"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:layout_marginEnd="10dp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VEGETABLES"
+                            android:textColor="#2F91EB"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:background="#DBEDFD"
+                        android:gravity="center"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:layout_marginEnd="10dp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GARDEN"
+                            android:textColor="#2F91EB"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Even on Urban Excursions,
+Finding Mother Nature's Charms"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KINGDOM"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/kingdom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plantae"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FAMILY"
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp">
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/family"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cactacease"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="DESCRIPTION"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public parks aside, getting a dose of nature can
+be a tricky task during an urban escape. But nat
+ure should and can fit into that city getaway, acc
+ording to Kally Ellis, the founder of the London fl
+orist company McQueens and the in-house florist
+for the Maybourne Hotel Group. “Connecting with
+the natural world wherever you are is a great antid
+ote to jet lag and travel tiredness,” she said. “Plan
+ts and flowers can refresh us, boost our energy
+and help us recalibrate.”"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

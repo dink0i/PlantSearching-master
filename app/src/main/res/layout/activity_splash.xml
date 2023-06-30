@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.plantsearching.SplashActivity"
+android:background="@drawable/plant">
+
+    <ImageView
+        android:id="@+id/logo_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animation="@anim/fade_in"
+        android:src="@drawable/plant"></ImageView>
+    <TextView
+        android:id="@+id/enjoy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:animation="@anim/fade_in"
+        android:fontFamily="@font/satoshi_bold"
+        android:gravity="center_horizontal"
+        android:text="Plants App"
+        android:textColor="@color/light_gray"
+        android:textSize="50dp"></TextView>
+</RelativeLayout>

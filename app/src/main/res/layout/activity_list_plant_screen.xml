@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListPlantScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFDFF"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/article_background"
+            app:layout_constraintBottom_toTopOf="@+id/big_text_view"
+            app:layout_constraintTop_toTopOf="@+id/big_text_view">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/arrow_left_icon"
+                app:layout_constraintBottom_toTopOf="@+id/big_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/big_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="61dp"
+                android:text="Cactus"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-44dp"
+            android:elevation="10000dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/white"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white">
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_nonunderline"
+                        app:iconifiedByDefault="false"
+                        app:queryHint="Search For Plants"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lsv_plants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

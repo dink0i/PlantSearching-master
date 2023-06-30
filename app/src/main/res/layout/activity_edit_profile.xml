@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/playing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/back_edit_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="back_button"
+                android:src="@drawable/back_image_button_anim" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="@drawable/circle">
+            <ImageView
+                android:id="@+id/Edit1_avt"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/taylor_swift"/>
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/Edi1_Fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/my_green"
+            android:textColorHint="@color/my_green"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="240dp"
+            android:textAlignment="center"
+            android:hint="Enter full name"/>
+
+        <TextView
+            android:id="@+id/id_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_black"
+            android:textSize="15dp"
+            android:layout_marginTop="290dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="320dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/my_green"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <EditText
+                    android:id="@+id/Edit1_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:height="48dp"
+                    android:hint="Enter gender"
+
+                    />
+
+                <EditText
+                    android:id="@+id/Edit1_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Edit1_gender"
+                    android:layout_margin="5dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:height="48dp"
+
+                    android:hint="Enter date of birth" />
+
+                <EditText
+                    android:id="@+id/Edit1_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Edit1_dob"
+                    android:layout_margin="5dp"
+                    android:layout_marginHorizontal="18dp"
+
+                    android:height="48dp"
+                    android:hint="Enter phone"
+
+                    />
+
+                <EditText
+                    android:id="@+id/Edit1_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Edit1_phone"
+                    android:layout_margin="5dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:height="48dp"
+
+                    android:hint="Change password"
+
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Save"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/my_green"
+                android:fontFamily="@font/satoshi_bold"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/my_white_5"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

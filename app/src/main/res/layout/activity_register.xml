@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/SignUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Get_Gmail"
+        android:text="SignUp"
+        android:textSize="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/white_black"
+        android:fontFamily="@font/satoshi_bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/quotes_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Get_Gmail"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/satoshi_medium"
+        android:gravity="center_horizontal"
+        android:text="Register New Account"
+        android:textColor="@color/my_gray_2"
+        android:layout_marginBottom="30dp"
+        android:textSize="15dp"></TextView>
+
+    <EditText
+        android:id="@+id/SignUP_Fullname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/SignUP_EMail"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/satoshi_medium"
+        android:hint="Full name"
+        android:textColor="@color/white_black"
+        android:textColorHint="@color/my_white_6"
+        android:textSize="17dp"></EditText>
+
+    <EditText
+        android:id="@+id/SignUP_EMail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/SignUp_Password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/satoshi_medium"
+        android:hint="Email"
+        android:textColor="@color/white_black"
+        android:textColorHint="@color/my_white_6"
+        android:textSize="17dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/SignUp_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn_Register"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white_black"
+        android:fontFamily="@font/satoshi_medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/my_white_6"
+        android:textSize="17dp">
+    </EditText>
+
+
+
+    <Button
+        android:id="@+id/btn_Register"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/my_green"
+        android:fontFamily="@font/satoshi_bold"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:text="Sign In"
+        android:textSize="18dp"
+        android:textColor="@color/my_white_5"
+        android:textAllCaps="false"
+        android:layout_above="@+id/textview"
+        android:layout_centerHorizontal="true"
+
+        />
+    <View
+        android:id="@+id/textview"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:background="@color/my_white_6"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/Register"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/satoshi_medium"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/BackToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="17dp"
+        android:text="Have an account? Sign In now"
+        android:textColor="@color/my_white_6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:fontFamily="@font/satoshi_medium"
+       />
+
+
+</LinearLayout>
+
+
+

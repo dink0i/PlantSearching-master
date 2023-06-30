@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463520720982",
+    "project_id": "plan-app-3f6f5",
+    "storage_bucket": "plan-app-3f6f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463520720982:android:e15f455a70ac201e47f3f7",
+        "android_client_info": {
+          "package_name": "com.example.plantsearching"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463520720982-hd5c8emn41bsva0isl7s890s7utfbs7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFz0azZJhkoBUxCLjo7dmOX3jUoMQLOqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463520720982-hd5c8emn41bsva0isl7s890s7utfbs7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

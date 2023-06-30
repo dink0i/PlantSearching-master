@@ -1,0 +1,10 @@
+<resources>
+    <string name="play_music">Now playing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">My Application</string>
+    <string name="quote">You can identify the plant you don\'t know  \tthrough your camera. </string>
+    <string name="quote3"> Let\'s learn about the many plant species that \exist in this world.</string>
+    <string name="quote_login"> Let\'s Learn More About Plants </string>
+    <string name="gotosignup"> Don\'t Have Account? Sign Up</string>
+</resources>
